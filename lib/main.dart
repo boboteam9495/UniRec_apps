@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:unirecapp/screens/data_policy_screen.dart';
 import 'package:unirecapp/screens/login_screen.dart';
+import 'package:unirecapp/screens/register_screen.dart';
 import 'constants.dart';
 
 void main() => runApp(MyApp());
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget {
       initialRoute: LoginScreen.id,
       routes: {
         LoginScreen.id: (context) => LoginScreen(),
+        RegisterScreen.id: (context) => RegisterScreen(),
+        DataPolicyScreen.id: (context) => DataPolicyScreen(),
       },
     );
   }
